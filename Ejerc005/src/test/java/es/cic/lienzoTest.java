@@ -59,6 +59,6 @@ public class lienzoTest {
 
     @Test
     void testModificarTamanoFigura() {
-
+        
     }
 }
