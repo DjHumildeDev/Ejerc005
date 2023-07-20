@@ -1,6 +1,6 @@
 package es.cic;
 
-public class CirculoImpl  implements Figura {
+public class Circulo  implements Figura {
 
     private int id;
     private double radio;
@@ -10,13 +10,13 @@ public class CirculoImpl  implements Figura {
     private Posicion pos;
    
    
-    public CirculoImpl() {
+    public Circulo() {
        
     }
 
     
  
-    public CirculoImpl(double radio, String color,  Posicion pos) {
+    public Circulo(double radio, String color,  Posicion pos) {
         this.radio = radio;
         this.color = color;
         
@@ -26,7 +26,7 @@ public class CirculoImpl  implements Figura {
 
 
     @Override
-    public Figura aniadirFigura(double radio, String color,Posicion pos) {
+    public Figura aniadir(double radio, String color,Posicion pos) {
         this.radio = radio;
         perimetro = 2*Math.PI*radio;
         this.color = color;
@@ -36,7 +36,7 @@ public class CirculoImpl  implements Figura {
     }
 
     @Override
-    public Figura modificarFigura(double radio) {
+    public Figura modificar(double radio) {
         this.radio = radio;
         this.perimetro = 2*Math.PI*radio;
 
@@ -44,7 +44,7 @@ public class CirculoImpl  implements Figura {
     }
 
     @Override
-    public void moverFigura(Posicion pos) {
+    public void mover(Posicion pos) {
         this.setPos(pos);
     }
     public double getRadio() {

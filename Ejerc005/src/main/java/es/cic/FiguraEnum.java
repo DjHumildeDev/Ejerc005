@@ -2,7 +2,7 @@ package es.cic;
 
 public enum FiguraEnum {
     Circulo,
-    Cudrilatero,
+    Cuadrado,
     Punto,
     Linea
 }

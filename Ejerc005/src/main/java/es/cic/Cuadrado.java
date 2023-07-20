@@ -1,7 +1,7 @@
 package es.cic;
 
 
-public class CuadrilateroImpl implements Figura {
+public class Cuadrado implements Figura {
     private int id;
     private double diagonal;
     private double posX,posY;
@@ -10,7 +10,7 @@ public class CuadrilateroImpl implements Figura {
 
     
    
-    public CuadrilateroImpl(int id, double diagonal, double posX, double posY, String color) {
+    public Cuadrado(int id, double diagonal, double posX, double posY, String color) {
         this.id = id;
         this.diagonal = diagonal;
         this.posX = posX;
@@ -20,19 +20,19 @@ public class CuadrilateroImpl implements Figura {
 
 
     @Override
-    public Figura aniadirFigura(double parametro, String color, Posicion pos) {
+    public Figura aniadir(double parametro, String color, Posicion pos) {
         
         return this;
     }
     
     @Override
-    public Figura modificarFigura(double nuevaDiagonal) {
-        // TODO Auto-generated method stub
+    public Figura modificar(double nuevaDiagonal) {
+        
         throw new UnsupportedOperationException("Unimplemented method 'modificarFigura'");
     }
     @Override
-    public void moverFigura(Posicion pos) {
-        // TODO Auto-generated method stub
+    public void mover(Posicion pos) {
+        
         throw new UnsupportedOperationException("Unimplemented method 'moverFigura'");
     }
 

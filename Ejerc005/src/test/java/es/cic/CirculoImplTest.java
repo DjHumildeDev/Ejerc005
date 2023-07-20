@@ -12,16 +12,16 @@ import org.junit.jupiter.api.Test;
 
 class CirculoImplTest {
 
-    private CirculoImpl cut;
+    private Circulo cut;
 
     @BeforeEach
     void SetUp() throws Exception{
-        this.cut = new CirculoImpl();
+        this.cut = new Circulo();
     }
 
     @Test
     void testPintarFigura() {
-        cut.aniadirFigura(5, "negro", new Posicion(0,0));
+        cut.aniadir(5, "negro", new Posicion(0,0));
         double esperado = 2*Math.PI*5;
         assertEquals(esperado, cut.getPerimetro(), 0.001);
         assertThat(cut.getColor(),is(notNullValue()));
@@ -29,7 +29,7 @@ class CirculoImplTest {
 
     @Test
     void modificarFigura(){
-        cut.modificarFigura(10);
+        cut.modificar(10);
         double esperado = 2*Math.PI*10;
         assertEquals(esperado, cut.getPerimetro(), 0.001);
         assertNotEquals(-esperado, cut.getPerimetro());
@@ -37,7 +37,7 @@ class CirculoImplTest {
 
     @Test
     void testMoverFigura() {
-    	cut.moverFigura(new Posicion(20,300));
+    	cut.mover(new Posicion(20,300));
         
         assertEquals( 20, cut.getPos().getPosX(), 0.01);
         assertEquals( 300, cut.getPos().getPosY(), 0.01); 
