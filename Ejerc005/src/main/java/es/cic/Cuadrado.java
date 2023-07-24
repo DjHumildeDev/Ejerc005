@@ -27,6 +27,11 @@ public class Cuadrado extends Figura {
     public FiguraEnum getTipo() {
         return FiguraEnum.Cuadrado;
     }
+    @Override
+    public void cambiarTamano(T nuevoTamano) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'cambiarTamano'");
+    }
     
 
 }

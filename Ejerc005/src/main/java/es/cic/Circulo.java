@@ -49,6 +49,4 @@ public class Circulo extends Figura {
         throw new UnsupportedOperationException("Unimplemented method 'cambiarTamano'");
     }
 
-   
-
 }
